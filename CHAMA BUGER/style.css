@@ -1,0 +1,24 @@
+:root {
+    --color-primary: #e63947;
+--color-primay-dark: #c1272d;
+--color-accent: #f4a300;
+--color-dark: #201a17;
+--color-light: #fff7ed;
+--color-gray: #6b7280;
+--radius: 14px;
+--fonte-titulo: "Anto", Impact, sans-serif;
+--fonte-base: "Inter", Roboto, Helvetica, Arial, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--fonte-base);
+    color: var(--color-dark);
+    line-height: 1.6;
+    
+}
