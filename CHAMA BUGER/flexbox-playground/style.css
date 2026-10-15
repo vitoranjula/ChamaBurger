@@ -126,4 +126,14 @@ height: 100px;
     display: flex;
 
     flex-direction: row;
+    /* ↑ define o eixo principal (main axis):
+    row -> itens em linha, da esquerda pra direita (padrão)
+    row-reverse -> itens em linha, invertidos (6,5,4,3,2,1)
+    column -> itens em coluna, de cima pra baixo
+    column-reverse -> itens em coluna, invertidos*/
 }
+
+
+
+
+ 

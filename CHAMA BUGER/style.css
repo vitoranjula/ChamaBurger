@@ -1,16 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-
-:root {
+*:root {
     --color-primary: #e63947;
-    --color-primay-dark: #c1272d;
+    --color-primary-dark: #c1272d;
     --color-accent: #f4a300;
     --color-dark: #201a17;
     --color-light: #fff7ed;
     --color-gray: #6b7280;
     --radius: 14px;
-    --fonte-titulo: "Anto", Impact, sans-serif;
-    --fonte-base: "Inter", Roboto, Helvetica, Arial, sans-serif;
+    --font-titulo: "Anton", Impact, sans-serif;
+    --font-base: "Inter", Roboto, Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -20,18 +17,18 @@
 }
 
 body {
-    font-family: var(--fonte-base);
+    font-family: var(--font-base);
     color: var(--color-dark);
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    font-family: var(--fonte-titulo);
+    font-family: var(--font-titulo);
     font-weight: 400;
     letter-spacing: 0.5px;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -50,14 +47,15 @@ img {
     padding: 14px 28px;
     border: none;
     border-radius: 999px;
-    font-family: var(--fonte-base);
+    font-family: var(--font-base);
     font-weight: 600;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow o.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .botao:hover {
-    transform: translateY(-2px)
+    transform: translateY(-2px);
 }
 
 .botao-nav {
@@ -75,16 +73,15 @@ img {
 
 .barra-navegacao {
     max-width: 1100px;
-   
-
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 18px 24px;
 }
+
 .logo {
-    font-family: var(--fonte-titulo);
+    font-family: var(--font-titulo);
     font-size: 1.4rem;
     color: #fff;
     letter-spacing: 1px;
@@ -108,6 +105,7 @@ img {
     background: var(--color-accent);
     color: var(--color-dark);
 }
+
 .botao-primario:hover {
     box-shadow: 0 8px 20px rgba(244, 163, 0, 0.4);
 }
@@ -122,4 +120,251 @@ img {
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    color: #fff;
+}
+
+.destaque-texto {
+    flex: 1 1 400px;
+}
+
+.destaque h1 {
+    font-size: 3rem;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    color: var(--color-accent);
+}
+
+.destaque p {
+    font-size: 1.15rem;
+    color: #e8d9cd;
+    max-width: 480px;
+    margin-bottom: 32px;
+}
+
+.destaque-imagem {
+    flex: 1 1 260px;
+    max-width: 420px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.destaque-imagem img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardapio {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.cardapio h2 {
+    font-size: 2.2rem;
+    margin-bottom: 48px;
+}
+
+.cardapio-itens {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardapio-item {
+    background: var(--color-light);
+    border-radius: var(--radius);
+    padding: 28px;
+    flex: 1 1 220px;
+    max-width: 260px;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cardapio-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.selo {
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+ .cardapio-item-imagem {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 16px;
+    border-radius: var(--radius);
+    overflow: hidden;
+ }
+
+ .cardapio-item-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+ .cardapio-item-imagem-combo {
+    display: flex;
+    gap: 4px;
+ }
+
+ .cardapio-item-imagem-combo img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+
+ }
+
+ .cardapio-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+ }
+
+ .cardapio-item p {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    min-height: 48px;
+ }
+
+ .preco {
+    font-family: var(--font-titulo);
+color: var(--color-primary);
+font-size: 1.3rem;
+
+ }
+
+ .adicionar-carrinho {
+background: var(--color-dark);
+color: #fff;
+padding:8px;
+border: none;
+border-radius: var(--radius);
+width: 100%;
+margin-top: 14px;
+font-family: var(--font-base);
+font-weight: 600;
+font-size: 0.85rem;
+cursor: pointer;
+transition: background 0.2s;
+ }
+
+ .adicionar-carrinho:hover {
+    background: var(--color-primary);
+ }
+
+ .sobre {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    display: flex;
+    align-items: center;
+    gap: 56px;
+ }
+
+
+ .sobre-imagem img {
+    border-radius: var(--radius);
+    width: 100%;
+    height: auto;
+}
+
+.secao-rotulo {
+    color: var(--color-primary);
+    font-family: var(--font-base);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+letter-spacing: 1px;
+margin-bottom: 12px;
+display: block;
+}
+
+.sobre-texto h2 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+}
+
+.sobre-texto p {
+    color: var(--color-gray);
+    margin-bottom: 20px;
+}
+
+.link-seta {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+.link-seta:hover {
+    text-decoration: underline;
+}
+
+.depoimentos {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    text-align: center;
+}
+
+.depoimentos h2 {
+    font-size: 2.2rem;
+    margin-bottom: 48px;
+}
+
+.depoimentos-lista {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.depoimento {
+    background: var(--color-light);
+    padding: 32px;
+    border-radius: var(--radius);
+    flex: 1 1 280;
+    max-width: 320px;
+    text-align: left;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+margin-bottom: 16px;
+}
+
+.citacao {
+    font-style: italic;
+    color: var(--color-dark);
+    margin-bottom: 16px;
+
+}
+
+.autor {
+    font-weight: 600;
+    font-size: 0.9rem;
+
+}
+
+.autor span {
+    font-weight: 400;
+    color: var(--color-gray);
+
 }
